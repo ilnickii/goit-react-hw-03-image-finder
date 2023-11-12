@@ -23,7 +23,8 @@ export const ImageModal = ({isOpen, onClose,image}) => {
         style={customStyles}
         contentLabel=" ImageModal"
       >
-         <img src={image.webformatURL} alt={image.user} />
+        <img src={image.webformatURL} alt={image.user} />
+        <button onClick={onClose}>close</button>
       </Modal>
     );
 };

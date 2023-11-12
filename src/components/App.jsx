@@ -71,6 +71,7 @@ export class App extends Component {
         {isLoading && <Loader />}
         {images.length > 0 &&
           !isLoading &&
+           this.state.page < Math.ceil(this.state.totalHits / 12) &&
           (<Button onClick={this.loadMore} />
           )}
         
